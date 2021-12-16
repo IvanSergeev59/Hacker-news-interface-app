@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/app';
+import './styles/index.sass';
 import './styles/css/index.css';
 import { Provider } from "react-redux";
 import HackerNewsService from './services';

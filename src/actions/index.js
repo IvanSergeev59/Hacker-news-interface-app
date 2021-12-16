@@ -5,6 +5,13 @@ const fetchNewsList = (data) => {
     }
 }
 
+const addIdOfChoosenNews = (id) => {
+    return {
+        type: 'ADD_NEWS_ID',
+        payload: id
+    }
+}
+
 const fetchNews = (hackerNewsService) => () => (dispatch) => {
     console.log
     hackerNewsService.getNewsList()
@@ -14,4 +21,4 @@ const fetchNews = (hackerNewsService) => () => (dispatch) => {
        
 }
 
-export {fetchNews}
+export {fetchNews, addIdOfChoosenNews}

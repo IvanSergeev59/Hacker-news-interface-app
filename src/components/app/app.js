@@ -13,8 +13,7 @@ import compose from '../utils'
 
     export class App  extends Component {
       componentDidMount() {
-        this.props.fetchNews()
-        console.log('update')
+        this.props.fetchNews();
       }
 
       render () {
@@ -25,6 +24,7 @@ import compose from '../utils'
               <Route path="/hacker-news-interface-app/" element={<NewsListPage />} />
               <Route path="/*" element={<NewsListPage />} /> 
               <Route path="/open-news/" element={<OpenNewsPage />} />
+              <Route path="/open-news/*" element={<OpenNewsPage />} />
             </Routes>
             <Footer />
           </Router>

@@ -1,7 +1,8 @@
 const updateFreshNews = (state, action) => {
     if(state === undefined) {
         return {
-            news: []
+            news: [],
+            newsId: ''
         }
     }
 
@@ -10,7 +11,12 @@ const updateFreshNews = (state, action) => {
             return {
                 ...state.updateFreshNews,
                 news: action.payload
-            }        
+            }      
+        case 'FETCH_NEWS':
+            return {
+                ...state.updateFreshNews,
+                newsId: action.payload
+            }   
         default: return state.updateFreshNews
     }
 }
