@@ -2,6 +2,7 @@ import {React, Component} from "react";
 import { connect } from "react-redux";
 import withHackerNewsService from '../../hoc';
 import compose from '../utils';
+import { Card } from "react-bootstrap";
 
 export class OpenNewsPage extends Component {
 
@@ -16,11 +17,15 @@ export class OpenNewsPage extends Component {
         const res = window.location.pathname.split('/open-news/').pop();
         let result = news.find(item => item.id == res);
         return (
-            <div>
-            <h2>{result.title}</h2>
-            <p>{result.by}</p>
-            <h3>{result.comments[0]}</h3>
-            </div>
+            <Card>
+            <Card.Img variant="top" src={result.item} />
+            <Card.Body>
+              <Card.Title>{result.title}</Card.Title>
+              <Card.Text>
+                {result.url}
+              </Card.Text>             
+            </Card.Body>
+          </Card>
         )
     }
 }

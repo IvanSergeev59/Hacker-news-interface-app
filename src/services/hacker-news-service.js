@@ -33,6 +33,7 @@ export default class HackerNewsService {
             id: news.id,
             title: news.title,
             url: news.url,
+            img: news.img, 
             comments: news.kids,
             link: `/open-news/${news.id}`
         }
