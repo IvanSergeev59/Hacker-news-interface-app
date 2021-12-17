@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/hacker-news-interface-app/static/css/main.780b0335.chunk.css",
-    "main.js": "/hacker-news-interface-app/static/js/main.3e8939bf.chunk.js",
-    "main.js.map": "/hacker-news-interface-app/static/js/main.3e8939bf.chunk.js.map",
-    "runtime-main.js": "/hacker-news-interface-app/static/js/runtime-main.13fc9034.js",
-    "runtime-main.js.map": "/hacker-news-interface-app/static/js/runtime-main.13fc9034.js.map",
-    "static/js/2.43abda2a.chunk.js": "/hacker-news-interface-app/static/js/2.43abda2a.chunk.js",
-    "static/js/2.43abda2a.chunk.js.map": "/hacker-news-interface-app/static/js/2.43abda2a.chunk.js.map",
-    "index.html": "/hacker-news-interface-app/index.html",
-    "static/css/main.780b0335.chunk.css.map": "/hacker-news-interface-app/static/css/main.780b0335.chunk.css.map",
-    "static/js/2.43abda2a.chunk.js.LICENSE.txt": "/hacker-news-interface-app/static/js/2.43abda2a.chunk.js.LICENSE.txt",
-    "static/media/index.css": "/hacker-news-interface-app/static/media/header_back.ea24f241.png",
-    "static/media/logo.eb202774.jpg": "/hacker-news-interface-app/static/media/logo.eb202774.jpg",
-    "static/media/me.1ceab910.jpeg": "/hacker-news-interface-app/static/media/me.1ceab910.jpeg"
+    "main.css": "/Hacker-news-interface-app/static/css/main.26853175.chunk.css",
+    "main.js": "/Hacker-news-interface-app/static/js/main.3e8939bf.chunk.js",
+    "main.js.map": "/Hacker-news-interface-app/static/js/main.3e8939bf.chunk.js.map",
+    "runtime-main.js": "/Hacker-news-interface-app/static/js/runtime-main.2263dabf.js",
+    "runtime-main.js.map": "/Hacker-news-interface-app/static/js/runtime-main.2263dabf.js.map",
+    "static/js/2.43abda2a.chunk.js": "/Hacker-news-interface-app/static/js/2.43abda2a.chunk.js",
+    "static/js/2.43abda2a.chunk.js.map": "/Hacker-news-interface-app/static/js/2.43abda2a.chunk.js.map",
+    "index.html": "/Hacker-news-interface-app/index.html",
+    "static/css/main.26853175.chunk.css.map": "/Hacker-news-interface-app/static/css/main.26853175.chunk.css.map",
+    "static/js/2.43abda2a.chunk.js.LICENSE.txt": "/Hacker-news-interface-app/static/js/2.43abda2a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/Hacker-news-interface-app/static/media/header_back.ea24f241.png",
+    "static/media/logo.eb202774.jpg": "/Hacker-news-interface-app/static/media/logo.eb202774.jpg",
+    "static/media/me.1ceab910.jpeg": "/Hacker-news-interface-app/static/media/me.1ceab910.jpeg"
   },
   "entrypoints": [
-    "static/js/runtime-main.13fc9034.js",
+    "static/js/runtime-main.2263dabf.js",
     "static/js/2.43abda2a.chunk.js",
-    "static/css/main.780b0335.chunk.css",
+    "static/css/main.26853175.chunk.css",
     "static/js/main.3e8939bf.chunk.js"
   ]
 }
