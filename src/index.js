@@ -9,7 +9,6 @@ import { HackerNewsServiceProvider } from './components/hacker-news-service-cont
 import store from './store';
 
 const hackerNewsService = new HackerNewsService();
-console.log(store)
 ReactDOM.render(
   <Provider store={store}>
     <HackerNewsServiceProvider value={hackerNewsService}>

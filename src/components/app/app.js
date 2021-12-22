@@ -14,6 +14,9 @@ import compose from '../utils'
     export class App  extends Component {
       componentDidMount() {
         this.props.fetchNews();
+        setInterval(() => {
+          this.props.fetchNews();
+        }, 60000)        
       }
 
       render () {
