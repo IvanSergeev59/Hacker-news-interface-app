@@ -17,7 +17,7 @@ export default class HackerNewsService {
    getNewsList = async () => {       
             let res = await this.getNumbersOfFreshNews(); 
             let newArr =[]  
-            for(let i=0; i < 3; i++) {
+            for(let i=0; i < 20; i++) {
             await fetch(`${this.apiBase}/item/${res[i]}.json?print=pretty`)
                 .then((res) => res.json())
                 .then((result) => newArr.push(result))

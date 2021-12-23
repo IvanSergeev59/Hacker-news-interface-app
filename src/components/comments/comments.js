@@ -1,24 +1,21 @@
 import React from "react";
 import Button from "react-bootstrap/button";
-
     const SubComments = (props) => {  
         const {subcomment} = props
         if (!subcomment) {
               return null
-        }
-           
+        }           
         else {
          return (
                 props.subcomment.map(
                 comment =>                   
                 <div key={comment.id} className="open-news__comments">
                     <p className="open-subcomments-p">Author: {comment.by}</p>
-                    <p className="open-subcomments-p" dangerouslySetInnerHTML={{__html: comment.text}}></p>     
-                    
+                    <p className="open-subcomments-p" dangerouslySetInnerHTML={{__html: comment.text}}></p>   
                 </div>  
+                )
             )
-           
-            )}
+        }
     }
 
 const Comments = (props) => {
@@ -40,16 +37,10 @@ const Comments = (props) => {
                 </div>  
             )
         )
-    }
-
- 
-    
+    }   
     if (commentsLoading) {
-        return (
-            
-                <CommentsContainer />
-                
-            
+        return (            
+                <CommentsContainer />                  
         )
     }
     else return <h4>Идёт загрузка комментариев</h4>

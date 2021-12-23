@@ -17,10 +17,7 @@ const FreshNews = (props) => {
                     <Card.Title>{item.title}</Card.Title>
                     <Card.Text>
                     Author: <span>{item.by}</span><br />
-                    Rating: <span>{item.score}</span><br />
-                    
-                    dated: <span>{item.date}</span>
-                    
+                    Rating: <span>{item.score}</span>
                     </Card.Text>
                     <Link to={item.link} onClick={(event) => addId(event.target.name)}><Button name ={item.id} variant="primary">More</Button></Link>
                 </Card.Body>

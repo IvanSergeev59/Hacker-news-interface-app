@@ -9,18 +9,24 @@ import Loader from "../loader";
 import Button from "react-bootstrap/button";
 import { Link } from "react-router-dom";
 
-export class OpenNewsPage extends Component {
 
+export class OpenNewsPage extends Component {    
     componentDidMount() {
         const state = this.props;
         const {newsId} = state.freshNews;  
         state.fetchOpenedNews(newsId)
         setInterval(() => {
           state.fetchOpenedNews(newsId);
-        }, 60000) 
+        }, 60000);
     }   
 
+
+  
+
     render() {
+        if(sessionStorage.getItem("is_reloaded")) {
+      console.log('Страница перезагружена')
+    }
         const state = this.props;
         const {fetchSubcomments, addSubcommentsId} = this.props;
         const {news, comments, commentsLoading, newsId} = state.freshNews;       
@@ -66,14 +72,15 @@ export class OpenNewsPage extends Component {
           else return <Loader />
         }
 
+        if(result) {
         return (
             <section className="open-news">
                 <OpenNewsPageContainer />
                 <CommentsBlock />
             </section>
         )      
-    }
-}
+        } else return <h2>Ololo</h2>
+}}
 
 const mapStateToProps = (state) => {
     return state
@@ -87,6 +94,8 @@ const mapStateToProps = (state) => {
         fetchSubcomments: (res) => dispatch(fetchSubcomments(hackerNewsService, res)())
       }
   }
+
+
   export default compose( 
     withHackerNewsService(),
   connect(mapStateToProps, mapDispatchToProps))(OpenNewsPage)

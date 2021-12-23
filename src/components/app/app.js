@@ -2,14 +2,13 @@ import React, {Component} from "react";
 import Header from "../header";
 import NewsListPage from "../pages/news-list-page";
 import OpenNewsPage from "../pages/open-news-page";
-import { BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router, Navigate} from "react-router-dom";
 import { Routes, Route } from "react-router";
 import Footer from "../footer";
 import { connect } from "react-redux";
 import { fetchNews } from "../../actions";
-import withHackerNewsService from '../../hoc'
-import compose from '../utils'
-
+import withHackerNewsService from '../../hoc';
+import compose from '../utils';
 
     export class App  extends Component {
       componentDidMount() {
@@ -25,9 +24,9 @@ import compose from '../utils'
             <Header />
             <Routes>
               <Route path="/hacker-news-interface-app/" element={<NewsListPage />} />
-              <Route path="/*" element={<NewsListPage />} /> 
-              <Route path="/open-news/" element={<OpenNewsPage />} />
+              <Route path="/*" element={<NewsListPage />} />
               <Route path="/open-news/*" element={<OpenNewsPage />} />
+              <Route path="*"  element={<Navigate to="/" />}    />
             </Routes>
             <Footer />
           </Router>
